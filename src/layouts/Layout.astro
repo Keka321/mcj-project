@@ -11,6 +11,7 @@ const { title, description } = Astro.props;
 <!DOCTYPE html>
 <html lang='en'>
   <head>
+    <link rel='stylesheet' href='https://use.typekit.net/usv4jct.css' />
     <meta charset='UTF-8' />
     <meta name='description' content={description} />
     <meta name='viewport' content='width=device-width' />
@@ -23,3 +24,22 @@ const { title, description } = Astro.props;
     <Footer />
   </body>
 </html>
+
+<style is:global>
+  .container {
+    max-width: 1280px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  body {
+    font-family: 'Museo-Slab', serif;
+  }
+  h1 {
+    font-size: 50px !important;
+    font-weight: 600 !important;
+    line-height: 62.5px !important;
+    color: #ffffff;
+  }
+</style>
