@@ -1,12 +1,69 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Sections/Hero.astro';
-import Cta from '../components/Sections/Cta.astro';
+import Layout from "../layouts/Layout.astro";
+import { YouTube } from "@astro-community/astro-embed-youtube";
 ---
 
-<Layout title='Welcome to Astro.' description='This is description'>
-  <main class='min-h-screen'>
-    <Hero />
-    <Cta />
+<Layout title="Rocrich AGV Solutions" description="This is description">
+  <main class="min-h-screen">
+    <!-- Hero Section -->
+    <section
+      class="py-40 sm:py-52 bg-no-repeat bg-cover bg-right-bottom relative bg-[url('/images/HeroBG.png')] leading-tight"
+    >
+      <div class="mx-auto max-w-7xl px-2 sm:px-4">
+        <div class="w-full flex flex-col lg:flex-row gap-6">
+          <div class="w-full lg:w-1/2 flex flex-col justify-center">
+            <p class="text-[30px]">Announcing</p>
+
+            <h1 class="mb-4 text-[50px] font-semibold">
+              Rocrich AGV Solutions
+            </h1>
+            <p class="font-semibold mb-4 text-xl leading-tight">
+              Bringing Rocla and Jungheinrich® AGVs together in North America
+            </p>
+            <p class="font-normal mb-6">
+              We are proud to announce the merger of MCJ Supply Chain Solutions,
+              the provider of Jungheinrich AGVs in North America, with
+              Logisnext's Rocla brand. This brings together the AGV portfolios
+              of Rocla and Jungheinrich under a new company, offering a unified
+              source for product and service solutions in North America.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-6 items-center lg:gap-14 mb-6"
+            >
+              <img
+                src="/images/JH_1_.svg"
+                alt="Logo"
+                width="250px"
+                height="36px"
+                class=""
+              />
+              <img
+                src="/images/Rocla-logo.png"
+                alt="Rocla logo"
+                width="142px"
+              />
+            </div>
+            <a
+              href="https://www.google.com/"
+              target="_blank"
+              class="underline font-medium">Read Press Release</a
+            >
+          </div>
+          <div class="w-full lg:w-1/2 relative">
+            <YouTube id="ScMzIvxBSi4" class="z-10" />
+            <img
+              src="/images/decoration.svg"
+              alt="Decoration"
+              class="absolute -bottom-8 lg:bottom-0 left-[27px]"
+            />
+            <img
+              src="/images/circle-decoration.svg"
+              alt="Decoration"
+              class="absolute -bottom-8 -right-4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </Layout>

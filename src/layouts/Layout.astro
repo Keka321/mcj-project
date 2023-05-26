@@ -4,63 +4,32 @@ export interface Props {
   description: string;
 }
 
-import Footer from './Footer.astro';
-import Header from './Header.astro';
+import Footer from "./Footer.astro";
+import Header from "./Header.astro";
 const { title, description } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <link rel='stylesheet' href='https://use.typekit.net/usv4jct.css' />
-    <meta charset='UTF-8' />
-    <meta name='description' content={description} />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='generator' content={Astro.generator} />
+    <link rel="stylesheet" href="https://use.typekit.net/usv4jct.css" />
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
     <Header />
     <slot />
-
-    <Footer />
   </body>
 </html>
 
 <style is:global>
-  .container {
-    max-width: 1280px !important;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
   body {
-    font-family: 'Museo-Slab', serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
-    color: #ffffff;
-  }
-  h1 {
-    font-size: 50px !important;
-    font-weight: 600 !important;
-    line-height: 62.5px !important;
-    color: #ffffff;
-  }
-  h2 {
-    font-size: 42px !important;
-    font-weight: 600 !important;
-    line-height: 52.5px !important;
-    color: #ffffff;
-  }
-
-  h4 {
-    font-size: 24px !important;
-    font-weight: 700 !important;
-    line-height: 24px !important;
+    font-family: "Museo-Slab", serif;
+    line-height: 1.25;
     color: #ffffff;
   }
 
