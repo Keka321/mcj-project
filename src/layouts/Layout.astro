@@ -4,15 +4,12 @@ export interface Props {
   description: string;
 }
 
-import Footer from "./Footer.astro";
-import Header from "./Header.astro";
 const { title, description } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://use.typekit.net/usv4jct.css" />
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
@@ -33,11 +30,3 @@ const { title, description } = Astro.props;
     <slot />
   </body>
 </html>
-
-<style is:global>
-  body {
-    font-family: "Museo-Slab", serif;
-    line-height: 1.25;
-    color: #ffffff;
-  }
-</style>

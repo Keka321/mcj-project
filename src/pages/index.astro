@@ -1,89 +1,127 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { YouTube } from "@astro-community/astro-embed-youtube";
+import { SEO } from "astro-seo";
 ---
 
-<Layout title="Rocrich AGV Solutions" description="This is description">
-  <main class="min-h-screen overflow-x-hidden">
-    <!-- Hero Section -->
-    <section
-      class="min-h-screen flex justify-center py-40 sm:py-52 bg-no-repeat bg-cover bg-right-bottom relative bg-[url('/images/HeroBG.png')] leading-tight"
-    >
-      <div class="mx-auto max-w-7xl px-2 sm:px-4">
-        <div class="w-full flex flex-col lg:flex-row gap-6">
-          <div class="w-full lg:w-1/2 flex flex-col justify-center">
-            <p class="text-[30px]">Announcing</p>
-
-            <h1 class="mb-4 text-[44px] sm:text-[50px] font-semibold">
-              Rocrich AGV Solutions
-            </h1>
-            <p class="font-semibold mb-4 text-xl leading-tight">
-              Bringing Rocla and Jungheinrich® AGVs together in North America
-            </p>
-            <p class="font-normal mb-6">
-              We are proud to announce the merger of MCJ Supply Chain Solutions,
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <SEO
+      title="Rocrich AGV Solutions"
+      description=`We are proud to announce the merger of MCJ Supply Chain Solutions,
               the provider of Jungheinrich AGVs in North America, with
               Logisnext's Rocla brand. This brings together the AGV portfolios
               of Rocla and Jungheinrich under a new company, offering a unified
-              source for product and service solutions in North America.
-            </p>
-            <div
-              class="flex flex-col sm:flex-row gap-6 items-start lg:items-center lg:gap-14 mb-6"
-            >
-              <img
-                src="/images/JH_1_.svg"
-                alt="Logo"
-                width="250px"
-                height="36px"
-                class=""
-              />
-              <img
-                src="/images/Rocla-logo.svg"
-                alt="Rocla logo"
-                width="142px"
-                height="52px"
-              />
-            </div>
-            <!--Switch value in href between "" with a link to press release -->
-            <a href="/" target="_blank" class="underline font-medium"
-              >Read Press Release</a
-            >
-          </div>
-          <div class="w-full lg:w-1/2 relative pt-10">
-            <div class="max-w-[380px] mx-auto sm:max-w-[310px] text-center">
-              <h2
-                class="text-[36px] sm:text-[42px] leading-tight mb-8 font-semibold"
+              source for product and service solutions in North America.`
+      openGraph={{
+        basic: {
+          title: "Rocrich AGV Solutions",
+          type: "A type.",
+          image: "https://www.rocrich.com/OG.png",
+        },
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.svg" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "https://www.rocrich.com/OG.png",
+            content: "",
+          },
+          { name: "twitter:title", content: "Rocrich AGV Solutions" },
+          {
+            name: "twitter:description",
+            content: `We are proud to announce the merger of MCJ Supply Chain Solutions,the provider of Jungheinrich AGVs in North America, with Logisnext's Rocla brand.This brings together the AGV portfolios of Rocla and Jungheinrich under a new company,offering a unified source for product and service solutions in North America.`,
+          },
+        ],
+      }}
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/usv4jct.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <main class="min-h-screen overflow-x-hidden">
+      <!-- Hero Section -->
+      <section
+        class="min-h-screen flex justify-center py-40 sm:py-52 bg-no-repeat bg-cover bg-right-bottom relative bg-[url('/images/HeroBG.png')] leading-tight"
+      >
+        <div class="mx-auto max-w-7xl px-2 sm:px-4">
+          <div class="w-full flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-1/2 flex flex-col justify-center">
+              <p class="text-[30px]">Announcing</p>
+
+              <h1 class="mb-4 text-[44px] sm:text-[50px] font-semibold">
+                Rocrich AGV Solutions
+              </h1>
+              <p class="font-semibold mb-4 text-xl leading-tight">
+                Bringing Rocla and Jungheinrich® AGVs together in North America
+              </p>
+              <p class="font-normal mb-6">
+                We are proud to announce the merger of MCJ Supply Chain
+                Solutions, the provider of Jungheinrich AGVs in North America,
+                with Logisnext's Rocla brand. This brings together the AGV
+                portfolios of Rocla and Jungheinrich under a new company,
+                offering a unified source for product and service solutions in
+                North America.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row gap-6 items-start lg:items-center lg:gap-14 mb-6"
               >
-                New Website Coming SOON
-              </h2>
-              <div class="flex flex-col gap-5">
-                <a
-                  class="px-4 py-[18px] sm:py-4 leading-none font-bold text-dark bg-white hover:bg-[#f2f2f2]"
-                  target="_blank"
-                  href="https://mcj.team/">Go to Jungheinrich AGVs</a
-                >
-                <a
-                  class="px-4 py-[18px] sm:py-4 leading-none font-bold text-dark bg-white hover:bg-[#f2f2f2]"
-                  target="_blank"
-                  href="https://rocla-agv.com/">Go to Rocla AGVs</a
-                >
+                <img
+                  src="/images/JH_1_.svg"
+                  alt="Logo"
+                  width="250px"
+                  height="36px"
+                  class=""
+                />
+                <img
+                  src="/images/Rocla-logo.svg"
+                  alt="Rocla logo"
+                  width="142px"
+                  height="52px"
+                />
               </div>
+              <!--Switch value in href between "" with a link to press release -->
+              <a href="/" target="_blank" class="underline font-medium"
+                >Read Press Release</a
+              >
             </div>
-            <img
-              src="/images/decoration.svg"
-              alt="Decoration"
-              class="absolute bottom-20 lg:bottom-8 left-[27px]"
-            />
-            <img
-              src="/images/circle-decoration.svg"
-              alt="Decoration"
-              class="absolute bottom-20 lg:bottom-16 -right-4"
-            />
+            <div class="w-full lg:w-1/2 relative pt-10">
+              <div class="max-w-[380px] mx-auto sm:max-w-[310px] text-center">
+                <h2
+                  class="text-[36px] sm:text-[42px] leading-tight mb-8 font-semibold"
+                >
+                  New Website Coming SOON
+                </h2>
+                <div class="flex flex-col gap-5">
+                  <a
+                    class="px-4 py-[18px] sm:py-4 leading-none font-bold text-dark bg-white hover:bg-[#f2f2f2]"
+                    target="_blank"
+                    href="https://mcj.team/">Go to Jungheinrich AGVs</a
+                  >
+                  <a
+                    class="px-4 py-[18px] sm:py-4 leading-none font-bold text-dark bg-white hover:bg-[#f2f2f2]"
+                    target="_blank"
+                    href="https://rocla-agv.com/">Go to Rocla AGVs</a
+                  >
+                </div>
+              </div>
+              <img
+                src="/images/decoration.svg"
+                alt="Decoration"
+                class="absolute bottom-20 lg:bottom-8 left-[27px]"
+              />
+              <img
+                src="/images/circle-decoration.svg"
+                alt="Decoration"
+                class="absolute bottom-20 lg:bottom-16 -right-4"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- CTA Section 
+      </section>
+      <!-- CTA Section 
     <section>
       <div class="flex flex-col md:flex-row">
         <div
@@ -132,5 +170,14 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
       </div>
     </section>
     -->
-  </main>
-</Layout>
+    </main>
+
+    <style is:global>
+      body {
+        font-family: "Museo-Slab", serif;
+        line-height: 1.25;
+        color: #ffffff;
+      }
+    </style>
+  </body>
+</html>
