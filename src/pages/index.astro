@@ -7,7 +7,7 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
   <main class="min-h-screen overflow-x-hidden">
     <!-- Hero Section -->
     <section
-      class="py-40 sm:py-52 bg-no-repeat bg-cover bg-right-bottom relative bg-[url('/images/HeroBG.png')] leading-tight"
+      class="min-h-screen flex justify-center py-40 sm:py-52 bg-no-repeat bg-cover bg-right-bottom relative bg-[url('/images/HeroBG.png')] leading-tight"
     >
       <div class="mx-auto max-w-7xl px-2 sm:px-4">
         <div class="w-full flex flex-col lg:flex-row gap-6">
@@ -44,29 +44,46 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
                 height="52px"
               />
             </div>
-            <a
-              href="https://www.google.com/"
-              target="_blank"
-              class="underline font-medium">Read Press Release</a
+            <!--Switch value in href between "" with a link to press release -->
+            <a href="/" target="_blank" class="underline font-medium"
+              >Read Press Release</a
             >
           </div>
           <div class="w-full lg:w-1/2 relative pt-10">
-            <YouTube id="NpEaa2P7qZI" class="z-10 before:w-0" />
+            <div class="max-w-[380px] mx-auto sm:max-w-[310px] text-center">
+              <h2
+                class="text-[36px] sm:text-[42px] leading-tight mb-8 font-semibold"
+              >
+                New Website Coming SOON
+              </h2>
+              <div class="flex flex-col gap-5">
+                <a
+                  class="px-4 py-[18px] sm:py-4 leading-none font-bold text-dark bg-white hover:bg-[#f2f2f2]"
+                  target="_blank"
+                  href="https://mcj.team/">Go to Jungheinrich AGVs</a
+                >
+                <a
+                  class="px-4 py-[18px] sm:py-4 leading-none font-bold text-dark bg-white hover:bg-[#f2f2f2]"
+                  target="_blank"
+                  href="https://rocla-agv.com/">Go to Rocla AGVs</a
+                >
+              </div>
+            </div>
             <img
               src="/images/decoration.svg"
               alt="Decoration"
-              class="absolute -bottom-20 lg:-bottom-8 left-[27px]"
+              class="absolute bottom-20 lg:bottom-8 left-[27px]"
             />
             <img
               src="/images/circle-decoration.svg"
               alt="Decoration"
-              class="absolute -bottom-20 lg:-bottom-16 -right-4"
+              class="absolute bottom-20 lg:bottom-16 -right-4"
             />
           </div>
         </div>
       </div>
     </section>
-    <!-- CTA Section -->
+    <!-- CTA Section 
     <section>
       <div class="flex flex-col md:flex-row">
         <div
@@ -114,5 +131,6 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
         </div>
       </div>
     </section>
+    -->
   </main>
 </Layout>
