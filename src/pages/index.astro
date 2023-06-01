@@ -1,5 +1,6 @@
 ---
 import { SEO } from "astro-seo";
+import Footer from "../layouts/Footer.astro";
 ---
 
 <!DOCTYPE html>
@@ -41,12 +42,12 @@ import { SEO } from "astro-seo";
     <meta name="viewport" content="width=device-width" />
   </head>
   <body>
-    <main class="min-h-screen overflow-x-hidden">
+    <main class="overflow-x-hidden">
       <!-- Hero Section -->
       <section
-        class="min-h-screen flex justify-center py-40 sm:py-52 bg-no-repeat bg-cover bg-right-bottom relative bg-[url('/images/HeroBG.png')] leading-tight"
+        class="flex min-h-screen justify-center py-40 sm:py-52 bg-no-repeat bg-cover bg-right-bottom relative bg-[url('/images/HeroBG.png')] leading-tight"
       >
-        <div class="mx-auto max-w-7xl px-2 sm:px-4">
+        <div class="mx-auto max-w-7xl px-2 xl:px-1 sm:px-4">
           <div class="w-full flex flex-col lg:flex-row gap-6">
             <div class="w-full lg:w-1/2 flex flex-col justify-center">
               <p class="text-[30px]">Announcing</p>
@@ -69,8 +70,8 @@ import { SEO } from "astro-seo";
                 class="flex flex-col sm:flex-row gap-6 items-start lg:items-center lg:gap-14 mb-6"
               >
                 <img
-                  src="/images/JH_1_.svg"
-                  alt="Logo"
+                  src="/images/LogoTM.svg"
+                  alt="Jungheinrich logo"
                   width="250px"
                   height="36px"
                   class=""
@@ -120,7 +121,18 @@ import { SEO } from "astro-seo";
             </div>
           </div>
         </div>
+        <div class="absolute max-w-7xl px-1 pb-2 bottom-2">
+          <p class="text-[12px] font-normal text-white">
+            © {new Date().getFullYear()} MCJ Supply Chain Solutions LLC. All rights
+            reserved. All registered trademarks are the property of their respective
+            owners, including Jungheinrich® and its logos. Some products may be shown
+            with optional equipment. ROCLA trade name, its respective wordmarks and
+            logos as well as corporate and product identity used herein, are trademarks
+            of Mitsubishi Logisnext Europe Oy, and may not be used without permission.
+          </p>
+        </div>
       </section>
+
       <!-- CTA Section 
     <section>
       <div class="flex flex-col md:flex-row">
